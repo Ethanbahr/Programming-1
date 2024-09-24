@@ -1,0 +1,12 @@
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\obj\Debug\Your Schedule GUI.pyprojResolveAssemblyReference.cache
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\obj\Debug\Your_Schedule_GUI.MainForm.resources
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\obj\Debug\Your Schedule GUI.pyproj.GenerateResource.Cache
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\Your Schedule GUI.exe.config
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\Your Schedule GUI.exe
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\Your Schedule GUI.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\IronPython.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\IronPython.Modules.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\Microsoft.Scripting.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Schedule GUI\Your Schedule GUI\obj\Debug\Your Schedule GUI.exe

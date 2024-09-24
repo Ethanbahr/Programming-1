@@ -1,0 +1,12 @@
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\obj\Debug\Favorite Quote GUI.pyprojResolveAssemblyReference.cache
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\obj\Debug\Favorite_Quote_GUI.MainForm.resources
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\obj\Debug\Favorite Quote GUI.pyproj.GenerateResource.Cache
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\Favorite Quote GUI.exe.config
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\Favorite Quote GUI.exe
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\Favorite Quote GUI.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\IronPython.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\IronPython.Modules.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\Microsoft.Scripting.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Quote GUI\Favorite Quote GUI\obj\Debug\Favorite Quote GUI.exe

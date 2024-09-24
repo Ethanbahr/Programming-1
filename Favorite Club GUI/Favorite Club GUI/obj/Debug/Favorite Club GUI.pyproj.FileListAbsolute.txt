@@ -1,0 +1,12 @@
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\Favorite Club GUI.exe.config
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\Favorite Club GUI.exe
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\Favorite Club GUI.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\IronPython.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\IronPython.Modules.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\Microsoft.Scripting.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\obj\Debug\Favorite Club GUI.pyprojResolveAssemblyReference.cache
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\obj\Debug\Favorite_Club_GUI.MainForm.resources
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\obj\Debug\Favorite Club GUI.pyproj.GenerateResource.Cache
+C:\Users\bahr.e\Desktop\Programming 1\Favorite Club GUI\Favorite Club GUI\obj\Debug\Favorite Club GUI.exe

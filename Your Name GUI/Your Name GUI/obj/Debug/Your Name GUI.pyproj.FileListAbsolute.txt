@@ -1,0 +1,12 @@
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\Your Name GUI.exe.config
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\Your Name GUI.exe
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\Your Name GUI.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\IronPython.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\IronPython.Modules.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\Microsoft.Scripting.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\obj\Debug\Your Name GUI.pyprojResolveAssemblyReference.cache
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\obj\Debug\Your_Name_GUI.MainForm.resources
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\obj\Debug\Your Name GUI.pyproj.GenerateResource.Cache
+C:\Users\bahr.e\Desktop\Programming 1\Your Name GUI\Your Name GUI\obj\Debug\Your Name GUI.exe

@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Craig Rules GUI", "Craig Rules GUI\Craig Rules GUI.pyproj", "{F8FA37A3-A44F-4661-89A2-E46D18B759AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8FA37A3-A44F-4661-89A2-E46D18B759AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FA37A3-A44F-4661-89A2-E46D18B759AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FA37A3-A44F-4661-89A2-E46D18B759AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8FA37A3-A44F-4661-89A2-E46D18B759AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
