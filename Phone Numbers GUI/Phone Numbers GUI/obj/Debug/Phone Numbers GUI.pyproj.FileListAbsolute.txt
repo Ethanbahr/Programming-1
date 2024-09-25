@@ -1,0 +1,12 @@
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\Phone Numbers GUI.exe.config
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\Phone Numbers GUI.exe
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\Phone Numbers GUI.dll
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\IronPython.dll
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\IronPython.Modules.dll
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\Microsoft.Scripting.dll
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\obj\Debug\Phone Numbers GUI.pyprojResolveAssemblyReference.cache
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\obj\Debug\Phone_Numbers_GUI.MainForm.resources
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\obj\Debug\Phone Numbers GUI.pyproj.GenerateResource.Cache
+C:\Users\bahr.e\Desktop\Programming 1\Phone Numbers GUI\Phone Numbers GUI\obj\Debug\Phone Numbers GUI.exe
