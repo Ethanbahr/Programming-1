@@ -171,7 +171,7 @@ class MainForm(Form):
 		area   = length * width
 		perim  = 2 * length + 2 * width
 		self._label5.text = str(area)
-		slef._label6.text = str(perim)
+		self._label6.text = str(perim)
 		# + - * / % 	** pow	// divide & round down
 		#int (Integer): Whole number, positive or negative
 		# float (Floating-Point Number): any number w/ a decimal
