@@ -166,7 +166,7 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		pass
-		
+
 		# + - * / % 	** pow	// divide & round down
 		# .sqrt: Square root (Don't include colon when using the command)
 		#int (Integer): Whole number, positive or negative
