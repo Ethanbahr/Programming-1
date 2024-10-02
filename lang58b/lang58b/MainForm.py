@@ -165,10 +165,18 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		pass
+		a = int(self._textBox1.Text)
+		b = int(self._textBox2.Text)
+		negb = int(self._textBox2.Text - negb - negb)
+		c = int(self._textBox3.Text)
+		x = # To be added
+		root = negb + .sqrt{(b ** 2 - 4 * [a*c]) / 2 * a}
+		# note to self: make sense of the math!!
+		self._label5.Text = root
+		
 
 		# + - * / % 	** pow	// divide & round down
-		# .sqrt: Square root (Don't include colon when using the command)
+		# .sqrt (Square root)
 		#int (Integer): Whole number, positive or negative
 		# float (Floating-Point Number): any number w/ a decimal
 		# str (String): a string of text
