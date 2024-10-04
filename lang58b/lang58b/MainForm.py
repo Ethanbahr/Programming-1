@@ -97,7 +97,7 @@ class MainForm(Form):
 		# 
 		self._label2.BackColor = System.Drawing.Color.MintCream
 		self._label2.Font = System.Drawing.Font("Palatino Linotype", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._label2.Location = System.Drawing.Point(12, 262)
+		self._label2.Location = System.Drawing.Point(119, 256)
 		self._label2.Name = "label2"
 		self._label2.Size = System.Drawing.Size(125, 35)
 		self._label2.TabIndex = 12
@@ -162,7 +162,6 @@ class MainForm(Form):
 		# note to self: make sense of the math!!
 		self._label5.Text = root
 		
-
 		# + - * / % 	** pow	// divide & round down
 		# .sqrt (Square root)
 		#int (Integer): Whole number, positive or negative
