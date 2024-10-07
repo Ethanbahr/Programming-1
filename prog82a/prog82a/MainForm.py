@@ -15,3 +15,4 @@ class MainForm(Form):
 		self.Name = "MainForm"
 		self.Text = "prog82a"
 
+# To be continued
