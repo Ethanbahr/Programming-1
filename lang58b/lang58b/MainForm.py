@@ -150,12 +150,13 @@ class MainForm(Form):
 		self.Text = "lang58b"
 		self.ResumeLayout(False)
 		self.PerformLayout()
+		
 
 
 	def Button1Click(self, sender, e):
 		a = int(self._textBox1.Text)
 		b = int(self._textBox2.Text)
-		negb = int(self._textBox2.Text - negb - negb)
+		negb = int(self._textBox2.Text - b - b)
 		c = int(self._textBox3.Text)
 		x = # To be added
 		root = negb + .sqrt{(b ** 2 - 4 * [a*c]) / 2 * a}
