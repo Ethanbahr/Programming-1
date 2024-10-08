@@ -26,7 +26,7 @@ class MainForm(Form):
 		# button1
 		# 
 		self._button1.Font = System.Drawing.Font("Palatino Linotype", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button1.Location = System.Drawing.Point(255, 334)
+		self._button1.Location = System.Drawing.Point(55, 334)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(143, 46)
 		self._button1.TabIndex = 0
@@ -46,7 +46,7 @@ class MainForm(Form):
 		# button2
 		# 
 		self._button2.Font = System.Drawing.Font("Palatino Linotype", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button2.Location = System.Drawing.Point(143, 334)
+		self._button2.Location = System.Drawing.Point(204, 334)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(101, 46)
 		self._button2.TabIndex = 6
@@ -57,7 +57,7 @@ class MainForm(Form):
 		# button3
 		# 
 		self._button3.Font = System.Drawing.Font("Palatino Linotype", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button3.Location = System.Drawing.Point(51, 335)
+		self._button3.Location = System.Drawing.Point(311, 334)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(86, 46)
 		self._button3.TabIndex = 7
@@ -158,12 +158,17 @@ class MainForm(Form):
 		b = int(self._textBox2.Text)
 		negb = int(self._textBox2.Text - b - b)
 		c = int(self._textBox3.Text)
-		x = # To be added
+		x = #To be added
 		root = negb + .sqrt{(b ** 2 - 4 * [a*c]) / 2 * a}
 		# note to self: make sense of the math!!
 		self._label5.Text = root
-		
-		# + - * / % 	** pow	// divide & round down
+		# + 
+		# - 
+		# * 
+		# / 
+		# % 	
+		# ** pow (Exponent)
+		# // (divide & round down)
 		# .sqrt (Square root)
 		#int (Integer): Whole number, positive or negative
 		# float (Floating-Point Number): any number w/ a decimal
