@@ -1,0 +1,10 @@
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\obj\Debug\prog58t.pyprojResolveAssemblyReference.cache
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\prog58t.exe.config
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\prog58t.exe
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\prog58t.dll
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\IronPython.dll
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\IronPython.Modules.dll
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\Microsoft.Scripting.dll
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\bahr.e\Desktop\Programming 1\prog58t\prog58t\obj\Debug\prog58t.exe

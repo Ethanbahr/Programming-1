@@ -38,7 +38,7 @@ class MainForm(Form):
 		# 
 		self._textBox1.BackColor = System.Drawing.SystemColors.Info
 		self._textBox1.Font = System.Drawing.Font("Palatino Linotype", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._textBox1.Location = System.Drawing.Point(155, 198)
+		self._textBox1.Location = System.Drawing.Point(155, 114)
 		self._textBox1.Name = "textBox1"
 		self._textBox1.Size = System.Drawing.Size(243, 36)
 		self._textBox1.TabIndex = 5
@@ -78,7 +78,7 @@ class MainForm(Form):
 		# 
 		self._textBox3.BackColor = System.Drawing.SystemColors.Info
 		self._textBox3.Font = System.Drawing.Font("Palatino Linotype", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._textBox3.Location = System.Drawing.Point(155, 114)
+		self._textBox3.Location = System.Drawing.Point(154, 198)
 		self._textBox3.Name = "textBox3"
 		self._textBox3.Size = System.Drawing.Size(243, 36)
 		self._textBox3.TabIndex = 10
@@ -155,13 +155,14 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		a = int(self._textBox1.Text)
+		nega = a - a - a
 		b = int(self._textBox2.Text)
-		negb = int(self._textBox2.Text - b - b)
+		negb = b - b - b
 		c = int(self._textBox3.Text)
-		x = #To be added
-		root = negb + .sqrt{(b ** 2 - 4 * [a*c]) / 2 * a}
-		# note to self: make sense of the math!!
-		self._label5.Text = root
+		negc = c - c - c
+		x = 0 #To be added
+		root = negb + (b [- 4 * a * c]) / 2 * a
+		self._label6.Text = rootII
 		# + 
 		# - 
 		# * 
