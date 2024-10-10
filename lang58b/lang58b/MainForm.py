@@ -162,7 +162,10 @@ class MainForm(Form):
 		negc = c - c - c
 		x = 0 #To be added
 		root = negb + (b [- 4 * a * c]) / 2 * a
-		self._label6.Text = rootII
+		rootII = pass
+		rootIII = pass
+		self._label5.Text = rootII
+		self._label6.Text = rootIII
 		# + 
 		# - 
 		# * 
