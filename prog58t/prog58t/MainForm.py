@@ -271,20 +271,20 @@ class MainForm(Form):
 		
 
 	def Button1Click(self, sender, e):
-		tp = int(self._textBox1.Text)
-		ap = int(self._textBox2.Text)
+		tp = float(self._textBox1.Text)
+		ap = float(self._textBox2.Text)
 		dlrs = 0
 		qtrs = 0
 		dimes = 0
 		nckls = 0
 		pns = 0
-		cdt = dlrs + atrs + dimes + nckls + pns
-		self._label4.Text = cdt
-		self._label10.Text = dlrs
-		self._label11.Text = qtrs
-		self._label12.Text = dimes
-		self._label13.Text = nckls
-		self._label14.Text = pns
+		cdt = ap - tp
+		self._label4.Text = str(cdt)
+		self._label10.Text = str(dlrs)
+		self._label11.Text = str(qtrs)
+		self._label12.Text = str(dimes)
+		self._label13.Text = str(nckls)
+		self._label14.Text = str(pns)
 		# + 
 		# - 
 		# * 
