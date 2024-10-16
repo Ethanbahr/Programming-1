@@ -273,18 +273,21 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		tp = float(self._textBox1.Text)
 		ap = float(self._textBox2.Text)
-		dlrs = 0
-		qtrs = 0
-		dimes = 0
-		nckls = 0
-		pns = 0
-		cdt = ap - tp
-		self._label4.Text = str(cdt)
-		self._label10.Text = str(dlrs)
-		self._label11.Text = str(qtrs)
-		self._label12.Text = str(dimes)
-		self._label13.Text = str(nckls)
-		self._label14.Text = str(pns)
+		dlrs 	= 0
+		qtrs 	= 0
+		dimes 	= 0
+		nckls 	= 0
+		pns 	= 0
+		cdt 	= ap - tp
+		#----------------
+		dlrs2 	=  ap - cdt # Not correct math - fix soon!!!
+		#----------------
+		self._label4.Text 	= str(cdt)
+		self._label10.Text 	= str(dlrs2)
+		self._label11.Text 	= str(qtrs)
+		self._label12.Text 	= str(dimes)
+		self._label13.Text 	= str(nckls)
+		self._label14.Text 	= str(pns)
 		# + 
 		# - 
 		# * 
@@ -301,6 +304,11 @@ class MainForm(Form):
 		self._textBox1.Text = ""
 		self._textBox2.Text = ""
 		self._label4.Text = ""
+		self._label10.Text = ""
+		self._label11.Text = ""
+		self._label12.Text = ""
+		self._label13.Text = ""
+		self._label14.Text = ""
 
 	def Button3Click(self, sender, e):
 		Application.Exit()
