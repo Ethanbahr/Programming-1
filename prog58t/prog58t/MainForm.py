@@ -28,6 +28,7 @@ class MainForm(Form):
 		self._label12 = System.Windows.Forms.Label()
 		self._label13 = System.Windows.Forms.Label()
 		self._label14 = System.Windows.Forms.Label()
+		self._label15 = System.Windows.Forms.Label()
 		self.SuspendLayout()
 		# 
 		# button1
@@ -129,7 +130,7 @@ class MainForm(Form):
 		self._label4.Name = "label4"
 		self._label4.Size = System.Drawing.Size(235, 30)
 		self._label4.TabIndex = 8
-		self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		# 
 		# label5
 		# 
@@ -241,10 +242,22 @@ class MainForm(Form):
 		self._label14.TabIndex = 18
 		self._label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		# 
+		# label15
+		# 
+		self._label15.BackColor = System.Drawing.Color.Linen
+		self._label15.Font = System.Drawing.Font("Perpetua Titling MT", 18, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+		self._label15.ForeColor = System.Drawing.Color.DarkRed
+		self._label15.Location = System.Drawing.Point(505, 23)
+		self._label15.Name = "label15"
+		self._label15.Size = System.Drawing.Size(115, 30)
+		self._label15.TabIndex = 19
+		self._label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.MediumSeaGreen
 		self.ClientSize = System.Drawing.Size(661, 436)
+		self.Controls.Add(self._label15)
 		self.Controls.Add(self._label14)
 		self.Controls.Add(self._label13)
 		self.Controls.Add(self._label12)
@@ -273,21 +286,43 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		tp = float(self._textBox1.Text)
 		ap = float(self._textBox2.Text)
-		dlrs 	= 0
-		qtrs 	= 0
-		dimes 	= 0
-		nckls 	= 0
-		pns 	= 0
+		dlrs 	= 1
+		qtrs 	= 0.25
+		dimes 	= 0.10
+		nckls 	= 0.05
+		pns 	= 0.01
 		cdt 	= ap - tp
 		#----------------
-		dlrs2 	=  ap - cdt # Not correct math - fix soon!!!
+		if cdt < 1:
+			dlrs 	= 0
+		elif cdt < 0.25:
+			dlrs 	= 0
+			qtrs 	= 0
+		elif cdt < 0.10:
+			dlrs 	= 0
+			qtrs 	= 0
+			dimes 	= 0
+		elif cdt < 0.05:
+			dlrs 	= 0
+			qtrs 	= 0
+			dimes 	= 0
+			nckls 	= 0
+		elif cdt < 0.01:
+			dlrs 	= 0
+			qtrs 	= 0
+			dimes 	= 0
+			nckls 	= 0
+			pns 	= 0
+			self._label15.Text = "Error"
+			#FIX!!!!!!!
 		#----------------
-		self._label4.Text 	= str(cdt)
-		self._label10.Text 	= str(dlrs2)
+		self._label4.Text 	= str(round(cdt,2))
+		self._label10.Text 	= str(dlrs)
 		self._label11.Text 	= str(qtrs)
 		self._label12.Text 	= str(dimes)
 		self._label13.Text 	= str(nckls)
 		self._label14.Text 	= str(pns)
+		self._label15.Text = "SALE"
 		# + 
 		# - 
 		# * 
@@ -303,12 +338,12 @@ class MainForm(Form):
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
 		self._textBox2.Text = ""
-		self._label4.Text = ""
-		self._label10.Text = ""
-		self._label11.Text = ""
-		self._label12.Text = ""
-		self._label13.Text = ""
-		self._label14.Text = ""
+		self._label4.Text 	= ""
+		self._label10.Text 	= ""
+		self._label11.Text 	= ""
+		self._label12.Text	= ""
+		self._label13.Text 	= ""
+		self._label14.Text 	= ""
 
 	def Button3Click(self, sender, e):
 		Application.Exit()
