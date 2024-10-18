@@ -286,36 +286,15 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		tp = float(self._textBox1.Text)
 		ap = float(self._textBox2.Text)
-		dlrs 	= 1
-		qtrs 	= 0.25
-		dimes 	= 0.10
-		nckls 	= 0.05
-		pns 	= 0.01
 		cdt 	= ap - tp
-		#----------------
-		if cdt < 1:
-			dlrs 	= 0
-		elif cdt < 0.25:
-			dlrs 	= 0
-			qtrs 	= 0
-		elif cdt < 0.10:
-			dlrs 	= 0
-			qtrs 	= 0
-			dimes 	= 0
-		elif cdt < 0.05:
-			dlrs 	= 0
-			qtrs 	= 0
-			dimes 	= 0
-			nckls 	= 0
-		elif cdt < 0.01:
-			dlrs 	= 0
-			qtrs 	= 0
-			dimes 	= 0
-			nckls 	= 0
-			pns 	= 0
-			self._label15.Text = "Error"
-			#FIX!!!!!!!
-		#----------------
+		dlrs 	= cdt // 1
+		qtrs 	= (cdt - dlrs) // 0.25
+		dimes 	= (cdt - dlrs - qtrs) // 0.10
+		nckls 	= (cdt - dlrs - qtrs - dimes) // 0.05
+		pns 	= (cdt - dlrs - qtrs - dimes - nckls) // 0.01
+		# Fix!!!!!!!!
+		
+		
 		self._label4.Text 	= str(round(cdt,2))
 		self._label10.Text 	= str(dlrs)
 		self._label11.Text 	= str(qtrs)

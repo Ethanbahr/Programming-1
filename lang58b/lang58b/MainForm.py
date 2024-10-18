@@ -157,8 +157,8 @@ class MainForm(Form):
 		a = float(self._textBox1.Text)
 		b = float(self._textBox2.Text)
 		c = float(self._textBox3.Text)
-		root =  -b + math.sqrt(b**2 - 4 * a * c) / (2 * a)
-		rootII = -b - math.sqrt(b**2 - 4 * a * c) / (2 * a)
+		root =  -b + math.sqrt(b**2 - (4 * a * c)) / (2 * a)
+		rootII = -b - math.sqrt(b**2 - (4 * a * c)) / (2 * a)
 		self._label5.Text = str(root)
 		self._label6.Text = str(rootII)
 		# + 
