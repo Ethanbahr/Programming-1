@@ -289,9 +289,9 @@ class MainForm(Form):
 		cdt 	= ap - tp
 		dlrs 	= cdt // 1
 		qtrs 	= (cdt - dlrs) // 0.25
-		dimes 	= (cdt - dlrs - qtrs) // 0.10
-		nckls 	= (cdt - dlrs - qtrs - dimes) // 0.05
-		pns 	= (cdt - dlrs - qtrs - dimes - nckls) // 0.01
+		dimes 	= (cdt - dlrs - (qtrs * 0.25)) // 0.10
+		nckls 	= (cdt - dlrs - (qtrs * 0.25) - (dimes * 0.10)) // 0.05
+		pns 	= (cdt - dlrs - (qtrs * 0.25) - (dimes * 0.10) - (nckls * 0.05)) // 0.01
 		# Fix!!!!!!!!
 		
 		
