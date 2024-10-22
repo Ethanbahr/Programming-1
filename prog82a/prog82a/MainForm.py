@@ -135,12 +135,12 @@ class MainForm(Form):
 # To be continued
 
 	def Button1Click(self, sender, e):
-		slmt = str(self._textBox1.Text)
-		vspd = str(self._textBox2.Text)
+		slmt = int(self._textBox1.Text)
+		vspd = int(self._textBox2.Text)
 		oslmt = vspd - slmt
-		fine = (oslmt * 5) + 20.00
+		fine = 20 + (oslmt * 5)
 		# find error !!!!
-		self._label6.Text = int(fine)
+		self._label6.Text = str(fine)
 
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
