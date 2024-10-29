@@ -16,6 +16,7 @@ class MainForm(Form):
 		self._button1 = System.Windows.Forms.Button()
 		self._button2 = System.Windows.Forms.Button()
 		self._button3 = System.Windows.Forms.Button()
+		self._label4 = System.Windows.Forms.Label()
 		self.SuspendLayout()
 		# 
 		# label1
@@ -27,6 +28,7 @@ class MainForm(Form):
 		self._label1.Size = System.Drawing.Size(286, 59)
 		self._label1.TabIndex = 0
 		self._label1.Text = "Enter weird British numbers in old notation here:"
+		self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		# 
 		# textBox1
 		# 
@@ -46,6 +48,7 @@ class MainForm(Form):
 		self._label2.Size = System.Drawing.Size(286, 59)
 		self._label2.TabIndex = 2
 		self._label2.Text = "Weird British numbers in current notation:"
+		self._label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		# 
 		# label3
 		# 
@@ -92,10 +95,23 @@ class MainForm(Form):
 		self._button3.UseVisualStyleBackColor = False
 		self._button3.Click += self.Button3Click
 		# 
+		# label4
+		# 
+		self._label4.BackColor = System.Drawing.Color.DarkGray
+		self._label4.Font = System.Drawing.Font("Segoe UI Emoji", 11.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._label4.Location = System.Drawing.Point(31, 290)
+		self._label4.Name = "label4"
+		self._label4.Size = System.Drawing.Size(286, 49)
+		self._label4.TabIndex = 7
+		self._label4.Text = """The theme is
+ depressing, just like the British weather!"""
+		self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Gray
-		self.ClientSize = System.Drawing.Size(342, 299)
+		self.ClientSize = System.Drawing.Size(342, 348)
+		self.Controls.Add(self._label4)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -110,15 +126,17 @@ class MainForm(Form):
 
 	# To be completed
 	def Button1Click(self, sender, e):
-		on = str(self._textBox1.Text)
-		
-		cn = 0
+		on 			= str(self._textBox1.Text)
+		pence 		= 1
+		shilling 	= 12
+		pound 		= 240
+		cn = 
 		
 		self._label3.Text = str(cn)
 
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
-		self._label3.Text = ""
+		self._label3.Text 	= ""
 
 	def Button3Click(self, sender, e):
 		Application.Exit()
