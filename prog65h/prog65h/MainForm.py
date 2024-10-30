@@ -17,26 +17,29 @@ class MainForm(Form):
 		self._button2 = System.Windows.Forms.Button()
 		self._button3 = System.Windows.Forms.Button()
 		self._label4 = System.Windows.Forms.Label()
+		self._textBox2 = System.Windows.Forms.TextBox()
+		self._textBox3 = System.Windows.Forms.TextBox()
 		self.SuspendLayout()
 		# 
 		# label1
 		# 
 		self._label1.BackColor = System.Drawing.Color.Silver
-		self._label1.Font = System.Drawing.Font("Segoe UI Emoji", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._label1.Font = System.Drawing.Font("Segoe UI Emoji", 9.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label1.Location = System.Drawing.Point(31, 9)
 		self._label1.Name = "label1"
 		self._label1.Size = System.Drawing.Size(286, 59)
 		self._label1.TabIndex = 0
-		self._label1.Text = "Enter weird British numbers in old notation here:"
+		self._label1.Text = """Enter weird British numbers in old notation here:
+Pound, Shilling, Pence"""
 		self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		# 
 		# textBox1
 		# 
 		self._textBox1.BackColor = System.Drawing.Color.DarkGray
 		self._textBox1.Font = System.Drawing.Font("Segoe UI Emoji", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._textBox1.Location = System.Drawing.Point(100, 71)
+		self._textBox1.Location = System.Drawing.Point(31, 71)
 		self._textBox1.Name = "textBox1"
-		self._textBox1.Size = System.Drawing.Size(140, 33)
+		self._textBox1.Size = System.Drawing.Size(89, 33)
 		self._textBox1.TabIndex = 1
 		# 
 		# label2
@@ -107,10 +110,30 @@ class MainForm(Form):
  depressing, just like the British weather!"""
 		self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		# 
+		# textBox2
+		# 
+		self._textBox2.BackColor = System.Drawing.Color.DarkGray
+		self._textBox2.Font = System.Drawing.Font("Segoe UI Emoji", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._textBox2.Location = System.Drawing.Point(131, 71)
+		self._textBox2.Name = "textBox2"
+		self._textBox2.Size = System.Drawing.Size(89, 33)
+		self._textBox2.TabIndex = 8
+		# 
+		# textBox3
+		# 
+		self._textBox3.BackColor = System.Drawing.Color.DarkGray
+		self._textBox3.Font = System.Drawing.Font("Segoe UI Emoji", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._textBox3.Location = System.Drawing.Point(228, 71)
+		self._textBox3.Name = "textBox3"
+		self._textBox3.Size = System.Drawing.Size(89, 33)
+		self._textBox3.TabIndex = 9
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Gray
 		self.ClientSize = System.Drawing.Size(342, 348)
+		self.Controls.Add(self._textBox3)
+		self.Controls.Add(self._textBox2)
 		self.Controls.Add(self._label4)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
@@ -126,11 +149,14 @@ class MainForm(Form):
 
 	# To be completed
 	def Button1Click(self, sender, e):
-		on 			= str(self._textBox1.Text)
-		pence 		= 1
-		shilling 	= 12
-		pound 		= 240
-		cn = 
+		pence 		= int(self._textBox3.Text)
+		shilling 	= int(self._textBox2.Text)
+		pound 		= int(self._textBox1.Text)
+		num1 		= pound * 240
+		num2 		= shilling * 12
+		num3		= pence * 1
+		total = num1 + num2 + num3
+		cn = (total / 2.4)//1
 		
 		self._label3.Text = str(cn)
 
