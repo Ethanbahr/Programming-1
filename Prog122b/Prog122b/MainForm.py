@@ -47,6 +47,7 @@ class MainForm(Form):
 		# 
 		# listBox1
 		# 
+		self._listBox1.BackColor = System.Drawing.Color.White
 		self._listBox1.FormattingEnabled = True
 		self._listBox1.Location = System.Drawing.Point(12, 12)
 		self._listBox1.Name = "listBox1"
@@ -55,6 +56,7 @@ class MainForm(Form):
 		# 
 		# MainForm
 		# 
+		self.BackColor = System.Drawing.Color.LightGray
 		self.ClientSize = System.Drawing.Size(318, 391)
 		self.Controls.Add(self._listBox1)
 		self.Controls.Add(self._button3)
@@ -66,13 +68,16 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		pay = 4
-		line = "----" + "----" + "----"
+		header = "Hours:\t\tPay:"
+		self.listBox1.items.add(header)
 		for num in range(0,41):
-		pass
+			pay = num * 4
+			line = str(num) + "\t\t" + str(int(pay))
+			self.listBox1.items.add(line)
+			
 
 	def Button2Click(self, sender, e):
-		pass
+		self.listBox1.items.clear()
 
 	def Button3Click(self, sender, e):
 		Application.Exit()
