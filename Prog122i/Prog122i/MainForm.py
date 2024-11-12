@@ -81,11 +81,11 @@ class MainForm(Form):
 		for num in range(-25,26):
 			nc 		= num**3
 			ncr  	= num**(1/3)
-		#   if ncr**3 is num:
+		#	if ncr**3 is num:
 		#		ncr = ncr
 		#	else:
 		#		ncr = "error"
-		# ^^ Error finder-er thingy or something idk^^
+		#	^^ Error finder-er thingy or something idk^^
 			line 	= str(num) + "\t\t" + str(ncr) + "\t\t" + str(nc)
 			self._listBox1.Items.Add(line)
 			# Fix !!!!
