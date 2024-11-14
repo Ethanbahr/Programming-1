@@ -80,13 +80,18 @@ class MainForm(Form):
 		self._listBox1.Items.Add(header)
 		for num in range(-25,26):
 			nc 		= num**3
-			ncr  	= num**(1/3)
-		#	if ncr**3 is num:
-		#		ncr = ncr
+			ncr  	= num
+			if ncr <=0:
+				ncr2 = -(abs(ncr)**(1.0/3))
+			else:
+				ncr2 = (abs(num)**(1.0/3))
+			ncr2r = round((ncr2),5)
+		#	if ncr2**3 is num:
+		#		ncr2 = ncr2
 		#	else:
-		#		ncr = "error"
+		#		ncr2 = "error"
 		#	^^ Error finder-er thingy or something idk^^
-			line 	= str(num) + "\t\t" + str(ncr) + "\t\t" + str(nc)
+			line 	= str(num) + "\t\t" + str(ncr2r) + "\t\t" + str(nc)
 			self._listBox1.Items.Add(line)
 			# Fix !!!!
 
