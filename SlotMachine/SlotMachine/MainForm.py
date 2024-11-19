@@ -244,6 +244,10 @@ class MainForm(Form):
 		self._pictureBox12.TabStop = False
 		self._pictureBox12.Visible = False
 		# 
+		# timer1
+		# 
+		self._timer1.Tick += self.Timer1Tick
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Maroon
@@ -299,12 +303,10 @@ class MainForm(Form):
 		im3 	= self._pictureBox7.BackgroundImage
 		im4 	= self._pictureBox8.BackgroundImage
 		im5 	= self._pictureBox9.BackgroundImage
-		levoff 	= self._pictureBox11.BackgroundImage
-		levon 	= self._pictureBox12.BackgroundImage
+		
+		LevOff 	= self._pictureBox11.BackgroundImage
+		LevOn 	= self._pictureBox12.BackgroundImage
 		rnd 	= System.Random()
-		num1 	= 0
-		num2 	= 0
-		num3 	= 0
 		# Copy above into TimerTick
 		
 		if self._textBox1.Text == "":
@@ -322,5 +324,365 @@ class MainForm(Form):
 		elif bet > money and bet > newmoney:
 			MessageBox.Show("You don't have enough money!")
 		else:
-			#TODO
-			pass
+			self._button1.BackgroundImage = LevOn
+			self._button1.Enabled 		  = False
+			self._pictureBox4.Visible 	  = True
+			self._timer1.Enabled		  = True
+			self._progressBar1.Value	  = 0
+			self._label2.Text 			  = str(round(newmoney, 2))
+			
+			num1 = self.num1
+			num2 = self.num2
+			num3 = self.num3
+			
+			if num1 == 1 and num2 == 1 and num3 == 1:
+				newmoney += bet * 2
+				
+			elif num1 == 2 and num2 == 2 and num3 == 2:
+				newmoney += bet * 5
+			
+			elif num1 == 3 and num2 == 3 and num3 == 3:
+				newmoney += bet * 10
+			
+			elif num1 == 4 and num2 == 4 and num3 == 4:
+				newmoney += bet * 50
+			
+			elif num1 == 5 and num2 == 5 and num3 == 5:
+				newmoney += bet * 100
+			
+			elif num1 == 1 and num2 == 1 and num3 == 2:
+				newmoney += bet * 1.5
+				
+			elif num1 == 1 and num2 == 1 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 1 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 1 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 2 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 2 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 2 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 2 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 2 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 3 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 3 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 3 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 3 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 3 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 4 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 4 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 4 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 4 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 4 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 5 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 5 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 5 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 5 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 1 and num2 == 5 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 1 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 1 and num3 == 2:
+				newmoney += bet * 1.5
+				
+			elif num1 == 2 and num2 == 1 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 1 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 1 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 2 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 2 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 2 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 2 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 2 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 3 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 3 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 3 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 3 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 3 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 4 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 4 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 4 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 4 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 4 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 5 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 5 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 5 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 5 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 2 and num2 == 5 and num3 == 5:
+				newmoney += bet * 1.5
+				
+			elif num1 == 3 and num2 == 1 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 1 and num3 == 2:
+				newmoney += bet * 1.5
+				
+			elif num1 == 3 and num2 == 1 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 1 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 1 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 2 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 2 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 2 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 2 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 2 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 3 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 3 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 3 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 3 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 3 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 4 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 4 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 4 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 4 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 4 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 5 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 5 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 5 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 5 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 3 and num2 == 5 and num3 == 5:
+				newmoney += bet * 1.5
+				
+			elif num1 == 4 and num2 == 1 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 1 and num3 == 2:
+				newmoney += bet * 1.5
+				
+			elif num1 == 4 and num2 == 1 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 1 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 1 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 2 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 2 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 2 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 2 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 2 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 3 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 3 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 3 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 3 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 3 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 4 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 4 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 4 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 4 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 4 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 5 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 5 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 5 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 5 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 4 and num2 == 5 and num3 == 5:
+				newmoney += bet * 1.5
+			
+			#TODO: Check is num vars = 3, 4, and 5 - multiply by whatever you want
+			
+			
+			self.num1 = 0
+			self.num2 = 0
+			self.num3 = 0
+			self._label2.Text = str(round(newmoney, 2))
+			
+			if newmoney <= 0:
+				MessageBox.Show("You ran out of cash!")
+
+	def Timer1Tick(self, sender, e):
+		im1 	= self._pictureBox5.BackgroundImage
+		im2 	= self._pictureBox6.BackgroundImage
+		im3 	= self._pictureBox7.BackgroundImage
+		im4 	= self._pictureBox8.BackgroundImage
+		im5 	= self._pictureBox9.BackgroundImage
+		LevOff 	= self._pictureBox11.BackgroundImage
+		LevOn 	= self._pictureBox12.BackgroundImage
+		rnd 	= System.Random()
+		
+		
+		images  = [im1, im2, im3, im4, im5]
+		for lcv in range(0, 1000):
+			self.num1 = rnd.Next(1, 6)
+			self.num2 = rnd.Next(1, 6)
+			self.num3 = rnd.Next(1, 6)
+			
+			self._pictureBox1.BackgroundImage = images[self.num1 - 1]
+			self._pictureBox2.BackgroundImage = images[self.num2 - 1]
+			self._pictureBox3.BackgroundImage = images[self.num3 - 1]
+			
+			
+			self._progressBar1.Increment(1)
+			if self._progressBar1.Value == self._progressBar1.Maximum:
+				self._timer1.Enabled 	  	  = False
+				self._pictureBox4.Visible 	  = False
+				self._button1.BackgroundImage = LevOff
+				self._button1.Enabled		  = True
