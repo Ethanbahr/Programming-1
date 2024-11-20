@@ -290,7 +290,7 @@ class MainForm(Form):
 	def Button2Click(self, sender, e):
 		rnd = System.Random()
 		money = rnd.Next(1,51)
-		if money > 25:
+		if money > 999999999:
 			MessageBox.Show("You failed to steal money!")
 		else:
 			cmoney = float(self._label2.Text)
@@ -335,53 +335,42 @@ class MainForm(Form):
 			num2 = self.num2
 			num3 = self.num3
 			
-			if num1 == 1 and num2 == 1 and num3 == 1:
-				newmoney += bet * 2
 				
-			elif num1 == 2 and num2 == 2 and num3 == 2:
-				newmoney += bet * 5
-			
-			elif num1 == 3 and num2 == 3 and num3 == 3:
+			if num1 == 1 and num2 == 1 and num3 == 1:
 				newmoney += bet * 10
-			
-			elif num1 == 4 and num2 == 4 and num3 == 4:
-				newmoney += bet * 50
-			
-			elif num1 == 5 and num2 == 5 and num3 == 5:
-				newmoney += bet * 100
-			
+				
 			elif num1 == 1 and num2 == 1 and num3 == 2:
 				newmoney += bet * 1.5
 				
 			elif num1 == 1 and num2 == 1 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 1 and num2 == 1 and num3 == 4:
 				newmoney += bet * 1.5
 			
 			elif num1 == 1 and num2 == 1 and num3 == 5:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 1 and num2 == 2 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 1 and num2 == 2 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * (-999999999)
 			
 			elif num1 == 1 and num2 == 2 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * 999999999
 			
 			elif num1 == 1 and num2 == 2 and num3 == 4:
-				newmoney += bet * 1.5
+				newmoney += bet * (-999999999)
 			
 			elif num1 == 1 and num2 == 2 and num3 == 5:
 				newmoney += bet * 1.5
 			
 			elif num1 == 1 and num2 == 3 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 1 and num2 == 3 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 1 and num2 == 3 and num3 == 3:
 				newmoney += bet * 1.5
@@ -393,10 +382,10 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 1 and num2 == 4 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 1 and num2 == 4 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 1 and num2 == 4 and num3 == 3:
 				newmoney += bet * 1.5
@@ -405,10 +394,10 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 1 and num2 == 4 and num3 == 5:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 1 and num2 == 5 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 1 and num2 == 5 and num3 == 2:
 				newmoney += bet * 1.5
@@ -420,13 +409,13 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 1 and num2 == 5 and num3 == 5:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 2 and num2 == 1 and num3 == 1:
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 1 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 				
 			elif num1 == 2 and num2 == 1 and num3 == 3:
 				newmoney += bet * 1.5
@@ -435,13 +424,13 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 1 and num3 == 5:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 2 and num2 == 2 and num3 == 1:
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 2 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * 10
 			
 			elif num1 == 2 and num2 == 2 and num3 == 3:
 				newmoney += bet * 1.5
@@ -453,10 +442,10 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 3 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 2 and num2 == 3 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 2 and num2 == 3 and num3 == 3:
 				newmoney += bet * 1.5
@@ -471,10 +460,10 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 4 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 2 and num2 == 4 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 2 and num2 == 4 and num3 == 4:
 				newmoney += bet * 1.5
@@ -486,7 +475,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 5 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 2 and num2 == 5 and num3 == 3:
 				newmoney += bet * 1.5
@@ -495,7 +484,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 2 and num2 == 5 and num3 == 5:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 				
 			elif num1 == 3 and num2 == 1 and num3 == 1:
 				newmoney += bet * 1.5
@@ -504,7 +493,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 				
 			elif num1 == 3 and num2 == 1 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 3 and num2 == 1 and num3 == 4:
 				newmoney += bet * 1.5
@@ -516,10 +505,10 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 3 and num2 == 2 and num3 == 2:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 3 and num2 == 2 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 3 and num2 == 2 and num3 == 4:
 				newmoney += bet * 1.5
@@ -534,7 +523,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 3 and num2 == 3 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * 10
 			
 			elif num1 == 3 and num2 == 3 and num3 == 4:
 				newmoney += bet * 1.5
@@ -543,13 +532,13 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 3 and num2 == 4 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 3 and num2 == 4 and num3 == 2:
 				newmoney += bet * 1.5
 			
 			elif num1 == 3 and num2 == 4 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 3 and num2 == 4 and num3 == 4:
 				newmoney += bet * 1.5
@@ -564,7 +553,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 3 and num2 == 5 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 3 and num2 == 5 and num3 == 4:
 				newmoney += bet * 1.5
@@ -573,7 +562,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 				
 			elif num1 == 4 and num2 == 1 and num3 == 1:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 4 and num2 == 1 and num3 == 2:
 				newmoney += bet * 1.5
@@ -582,7 +571,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 4 and num2 == 1 and num3 == 4:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 4 and num2 == 1 and num3 == 5:
 				newmoney += bet * 1.5
@@ -597,7 +586,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 4 and num2 == 2 and num3 == 4:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 4 and num2 == 2 and num3 == 5:
 				newmoney += bet * 1.5
@@ -609,10 +598,10 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 4 and num2 == 3 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 4 and num2 == 3 and num3 == 4:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 4 and num2 == 3 and num3 == 5:
 				newmoney += bet * 1.5
@@ -627,7 +616,7 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 4 and num2 == 4 and num3 == 4:
-				newmoney += bet * 1.5
+				newmoney += bet * 10
 			
 			elif num1 == 4 and num2 == 4 and num3 == 5:
 				newmoney += bet * 1.5
@@ -639,13 +628,88 @@ class MainForm(Form):
 				newmoney += bet * 1.5
 			
 			elif num1 == 4 and num2 == 5 and num3 == 3:
-				newmoney += bet * 1.5
+				newmoney += bet * -1.5
 			
 			elif num1 == 4 and num2 == 5 and num3 == 4:
-				newmoney += bet * 1.5
+				newmoney += bet * 5
 			
 			elif num1 == 4 and num2 == 5 and num3 == 5:
 				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 1 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 1 and num3 == 2:
+				newmoney += bet * 1.5
+				
+			elif num1 == 5 and num2 == 1 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 1 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 1 and num3 == 5:
+				newmoney += bet * 5
+			
+			elif num1 == 5 and num2 == 2 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 2 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 2 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 2 and num3 == 4:
+				newmoney += bet * -1.5
+			
+			elif num1 == 5 and num2 == 2 and num3 == 5:
+				newmoney += bet * 5
+			
+			elif num1 == 5 and num2 == 3 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 3 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 3 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 3 and num3 == 4:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 3 and num3 == 5:
+				newmoney += bet * 5
+			
+			elif num1 == 5 and num2 == 4 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 4 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 4 and num3 == 3:
+				newmoney += bet * -1.5
+			
+			elif num1 == 5 and num2 == 4 and num3 == 4:
+				newmoney += bet * (-10)
+			
+			elif num1 == 5 and num2 == 4 and num3 == 5:
+				newmoney += bet * 5
+			
+			elif num1 == 5 and num2 == 5 and num3 == 1:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 5 and num3 == 2:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 5 and num3 == 3:
+				newmoney += bet * 1.5
+			
+			elif num1 == 5 and num2 == 5 and num3 == 4:
+				newmoney += bet * -1.5
+			
+			elif num1 == 5 and num2 == 5 and num3 == 5:
+				newmoney += bet * 10
 			
 			#TODO: Check is num vars = 3, 4, and 5 - multiply by whatever you want
 			
