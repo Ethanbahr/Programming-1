@@ -103,7 +103,7 @@ class MainForm(Form):
 		# 
 		self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label1.ForeColor = System.Drawing.Color.White
-		self._label1.Location = System.Drawing.Point(547, 375)
+		self._label1.Location = System.Drawing.Point(530, 375)
 		self._label1.Name = "label1"
 		self._label1.Size = System.Drawing.Size(69, 31)
 		self._label1.TabIndex = 5
@@ -113,27 +113,27 @@ class MainForm(Form):
 		# textBox1
 		# 
 		self._textBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._textBox1.Location = System.Drawing.Point(622, 375)
+		self._textBox1.Location = System.Drawing.Point(605, 375)
 		self._textBox1.Name = "textBox1"
-		self._textBox1.Size = System.Drawing.Size(136, 31)
+		self._textBox1.Size = System.Drawing.Size(153, 31)
 		self._textBox1.TabIndex = 6
 		# 
 		# label2
 		# 
 		self._label2.BackColor = System.Drawing.Color.LightGray
-		self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._label2.Location = System.Drawing.Point(622, 418)
+		self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._label2.Location = System.Drawing.Point(605, 418)
 		self._label2.Name = "label2"
-		self._label2.Size = System.Drawing.Size(136, 30)
+		self._label2.Size = System.Drawing.Size(153, 30)
 		self._label2.TabIndex = 7
 		self._label2.Text = "100"
-		self._label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		self._label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
 		# 
 		# label3
 		# 
 		self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label3.ForeColor = System.Drawing.Color.White
-		self._label3.Location = System.Drawing.Point(547, 417)
+		self._label3.Location = System.Drawing.Point(530, 417)
 		self._label3.Name = "label3"
 		self._label3.Size = System.Drawing.Size(69, 31)
 		self._label3.TabIndex = 8
@@ -289,8 +289,8 @@ class MainForm(Form):
 
 	def Button2Click(self, sender, e):
 		rnd = System.Random()
-		money = rnd.Next(1,51)
-		if money > 999999999:
+		money = rnd.Next(1,101)
+		if money > 65:
 			MessageBox.Show("You failed to steal money!")
 		else:
 			cmoney = float(self._label2.Text)

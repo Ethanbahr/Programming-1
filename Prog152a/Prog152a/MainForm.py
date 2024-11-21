@@ -79,9 +79,9 @@ class MainForm(Form):
 		header = "Sum of every multiple of 3 from 3 to 9669:"
 		self._listBox1.Items.Add(header)
 		for num in range(1,9670):
-			result = num * 3
-			# To be completed!!!!
-		
+			result 	= num * 3
+			sum 	= 0 # Placeholder
+			
 		self._listBox1.Items.Add(str(sum))
 
 	def Button2Click(self, sender, e):
