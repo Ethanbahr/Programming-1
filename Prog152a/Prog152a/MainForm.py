@@ -23,14 +23,14 @@ class MainForm(Form):
 		self._listBox1.ItemHeight = 21
 		self._listBox1.Location = System.Drawing.Point(12, 12)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(605, 382)
+		self._listBox1.Size = System.Drawing.Size(374, 109)
 		self._listBox1.TabIndex = 0
 		# 
 		# button1
 		# 
 		self._button1.BackColor = System.Drawing.Color.SeaGreen
 		self._button1.Font = System.Drawing.Font("Bauhaus 93", 14.25, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
-		self._button1.Location = System.Drawing.Point(12, 421)
+		self._button1.Location = System.Drawing.Point(12, 127)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(135, 44)
 		self._button1.TabIndex = 1
@@ -42,9 +42,9 @@ class MainForm(Form):
 		# 
 		self._button2.BackColor = System.Drawing.Color.SeaGreen
 		self._button2.Font = System.Drawing.Font("Bauhaus 93", 14.25, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
-		self._button2.Location = System.Drawing.Point(247, 421)
+		self._button2.Location = System.Drawing.Point(163, 127)
 		self._button2.Name = "button2"
-		self._button2.Size = System.Drawing.Size(135, 44)
+		self._button2.Size = System.Drawing.Size(106, 44)
 		self._button2.TabIndex = 2
 		self._button2.Text = "Clear"
 		self._button2.UseVisualStyleBackColor = False
@@ -54,9 +54,9 @@ class MainForm(Form):
 		# 
 		self._button3.BackColor = System.Drawing.Color.SeaGreen
 		self._button3.Font = System.Drawing.Font("Bauhaus 93", 14.25, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
-		self._button3.Location = System.Drawing.Point(482, 421)
+		self._button3.Location = System.Drawing.Point(284, 127)
 		self._button3.Name = "button3"
-		self._button3.Size = System.Drawing.Size(135, 44)
+		self._button3.Size = System.Drawing.Size(102, 44)
 		self._button3.TabIndex = 3
 		self._button3.Text = "Exit"
 		self._button3.UseVisualStyleBackColor = False
@@ -65,7 +65,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Teal
-		self.ClientSize = System.Drawing.Size(629, 468)
+		self.ClientSize = System.Drawing.Size(398, 191)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -78,9 +78,9 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		header = "Sum of every multiple of 3 from 3 to 9669:"
 		self._listBox1.Items.Add(header)
-		for num in range(1,9670):
+		for num in range(1,9670,3):
 			result 	= num * 3
-			sum 	= 0 # Placeholder
+			sum 	= (result * 537) + 12891
 			
 		self._listBox1.Items.Add(str(sum))
 
