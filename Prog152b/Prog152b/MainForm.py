@@ -128,8 +128,9 @@ class MainForm(Form):
 		self._listBox1.Items.Add(header)
 		for num in range(0,int(self._textBox1.Text),2):
 			sum 	= num + 0 # Placeholder
-			line 	= num + "\t" + sum
-			self._listBox1.Items.Add(float(sum))
+			sum2	= sum + 0 # Placeholder
+			line 	= num + "\t" + sum # Figure out which variable type SharpDevelop will accept for this darn thing !!!!
+			self._listBox1.Items.Add(int(sum))
 	
 	def Button2Click(self, sender, e):
 		self._listBox1.Items.Clear()

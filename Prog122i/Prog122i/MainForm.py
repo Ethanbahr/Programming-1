@@ -81,7 +81,7 @@ class MainForm(Form):
 		for num in range(-25,26):
 			nc 		= num**3
 			ncr  	= num
-			if ncr <=0:
+			if ncr <= 0:
 				ncr2 = -(abs(ncr)**(1.0/3))
 			else:
 				ncr2 = (abs(num)**(1.0/3))
