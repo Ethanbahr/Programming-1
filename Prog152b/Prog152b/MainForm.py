@@ -12,8 +12,6 @@ class MainForm(Form):
 		self._button1 = System.Windows.Forms.Button()
 		self._button2 = System.Windows.Forms.Button()
 		self._button3 = System.Windows.Forms.Button()
-		self._label1 = System.Windows.Forms.Label()
-		self._label2 = System.Windows.Forms.Label()
 		self._label3 = System.Windows.Forms.Label()
 		self._textBox1 = System.Windows.Forms.TextBox()
 		self._listBox1 = System.Windows.Forms.ListBox()
@@ -23,7 +21,7 @@ class MainForm(Form):
 		# 
 		self._button1.Font = System.Drawing.Font("Mongolian Baiti", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button1.ForeColor = System.Drawing.Color.DodgerBlue
-		self._button1.Location = System.Drawing.Point(12, 298)
+		self._button1.Location = System.Drawing.Point(12, 257)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(91, 43)
 		self._button1.TabIndex = 0
@@ -35,7 +33,7 @@ class MainForm(Form):
 		# 
 		self._button2.Font = System.Drawing.Font("Mongolian Baiti", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button2.ForeColor = System.Drawing.Color.DodgerBlue
-		self._button2.Location = System.Drawing.Point(109, 298)
+		self._button2.Location = System.Drawing.Point(109, 257)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(76, 43)
 		self._button2.TabIndex = 2
@@ -47,33 +45,13 @@ class MainForm(Form):
 		# 
 		self._button3.Font = System.Drawing.Font("Mongolian Baiti", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button3.ForeColor = System.Drawing.Color.DodgerBlue
-		self._button3.Location = System.Drawing.Point(191, 298)
+		self._button3.Location = System.Drawing.Point(191, 257)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(81, 43)
 		self._button3.TabIndex = 3
 		self._button3.Text = "Exit"
 		self._button3.UseVisualStyleBackColor = True
 		self._button3.Click += self.Button3Click
-		# 
-		# label1
-		# 
-		self._label1.BackColor = System.Drawing.Color.SkyBlue
-		self._label1.Font = System.Drawing.Font("Mongolian Baiti", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._label1.Location = System.Drawing.Point(12, 272)
-		self._label1.Name = "label1"
-		self._label1.Size = System.Drawing.Size(55, 23)
-		self._label1.TabIndex = 4
-		self._label1.Text = "Sum:"
-		# 
-		# label2
-		# 
-		self._label2.BackColor = System.Drawing.Color.White
-		self._label2.Font = System.Drawing.Font("Mongolian Baiti", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._label2.ForeColor = System.Drawing.Color.DodgerBlue
-		self._label2.Location = System.Drawing.Point(109, 272)
-		self._label2.Name = "label2"
-		self._label2.Size = System.Drawing.Size(163, 23)
-		self._label2.TabIndex = 5
 		# 
 		# label3
 		# 
@@ -108,12 +86,10 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.DodgerBlue
-		self.ClientSize = System.Drawing.Size(284, 366)
+		self.ClientSize = System.Drawing.Size(284, 312)
 		self.Controls.Add(self._listBox1)
 		self.Controls.Add(self._textBox1)
 		self.Controls.Add(self._label3)
-		self.Controls.Add(self._label2)
-		self.Controls.Add(self._label1)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -126,16 +102,15 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		header = "Even Num:\tSum:"
 		self._listBox1.Items.Add(header)
-		for num in range(0,int(self._textBox1.Text),2):
-			sum 	= num + 0 # Placeholder
-			sum2	= sum + 0 # Placeholder
-			line 	= num + "\t" + sum # Figure out which variable type SharpDevelop will accept for this darn thing !!!!
-			self._listBox1.Items.Add(int(sum))
+		sum = 0
+		for num in range(2,(int(self._textBox1.Text)+2),2):
+			sum 	+= num
+			line 	= str(num) + "\t\t" + str(sum) 
+			self._listBox1.Items.Add(line)
 	
 	def Button2Click(self, sender, e):
 		self._listBox1.Items.Clear()
 		self._textBox1.Text = ""
-		self._label2.Text	= ""
 
 	def Button3Click(self, sender, e):
 		Application.Exit()
