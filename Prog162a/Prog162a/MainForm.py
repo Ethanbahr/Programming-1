@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -81,9 +82,9 @@ class MainForm(Form):
 		self._label2.BackColor = System.Drawing.Color.Aquamarine
 		self._label2.Font = System.Drawing.Font("Gigi", 20.25, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
 		self._label2.ForeColor = System.Drawing.Color.Crimson
-		self._label2.Location = System.Drawing.Point(171, 54)
+		self._label2.Location = System.Drawing.Point(128, 54)
 		self._label2.Name = "label2"
-		self._label2.Size = System.Drawing.Size(110, 46)
+		self._label2.Size = System.Drawing.Size(153, 46)
 		self._label2.TabIndex = 5
 		# 
 		# MainForm
@@ -103,9 +104,9 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		input = self._textBox1.Text
-		for num in range(1,input+1):
-			pass
+		input 	  = self._textBox1.Text
+		factorial = math.factorial(long(input))
+		self._label2.Text = str(factorial)
 
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
