@@ -223,11 +223,11 @@ class MainForm(Form):
             lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """ TODO: RESET SECRETS """
-            bl.BackColor       = Color.White
-            lpdl.Backcolor     = Color.White
-            rpdl.Backcolor     = Color.White
-            lscore.ForeColor   = Color.White
-            rscore.ForeColor   = Color.White
+            BackColor 		   = Color.White
+            lpdl.BackColor  = Color.White
+            rpdl.BackColor = Color.White
+            leftscore.ForeColor   = Color.White
+            rightscore.ForeColor   = Color.White
             lbltitle.ForeColor = Color.White
             
         if e.KeyCode == Keys.R:
@@ -237,7 +237,7 @@ class MainForm(Form):
         
         if e.KeyCode == Keys.Enter:
             tball.Enabled = True
-            tdum.Enabled  = True
+            tdum.Enabled = True
             tbool.Enabled = not tmult.Enabled
             title.Visible = False
         
@@ -258,9 +258,11 @@ class MainForm(Form):
         """ TODO: FINISH MULTIPLAYER CONTROLS """
         if tmult.Enabled and tball.Enabled:
             if e.KeyCode == Keys.W:
-                pass
+                self.flagleft = False
+                left.Enabled = True
             elif e.KeyCode == Keys.S:
-                pass
+                self.flagleft = True
+                tleft.Enabled = True
         pass
 
     def MainFormLoad(self, sender, e):
@@ -284,8 +286,14 @@ class MainForm(Form):
         self.pdlTick(self._lblright, self.flagright, self._timerright)
 
     def LblballClick(self, sender, e):
-        self._lblball.BackColor = Color.Red
-        self.BackColor          = Color.Green  # Form BG Color
+        self._lblball.BackColor    = Color.Red
+        self.BackColor			   = Color.Green  # Form BG Color
+        self._lblright.BackColor   = Color.SaddleBrown
+        self._lblleft.BackColor    = Color.SaddleBrown
+        self._rightscore.ForeColor = Color.Yellow
+        self._leftscore.ForeColor  = Color.Yellow
+        self._lbltitle.ForeColor   = Color.Navy
+        
         """ TODO: PUT MORE EASTER EGGS LATER """
 
     def MainFormSizeChanged(self, sender, e):
