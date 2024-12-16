@@ -128,68 +128,57 @@ class MainForm(Form):
 
 
     def TimerballTick(self, sender, e):
-        ball = self._lblball
-        lpdl = self._lblleft
-        rpdl = self._lblright
+        ball   = self._lblball
+        lpdl   = self._lblleft
+        rpdl   = self._lblright
         rscore = int(self._rightscore.Text)
         lscore = int(self._leftscore.Text)
         ball.Top += self.ballup
         ball.Left += 8 * self.balld
         
         if ball.Right >= rpdl.Right and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
-            self.balld = -1
+            self.balld  = -1
             self.ballup = self.R.Next(-4, 5)
         elif ball.Left <= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
-            self.balld = 1
+            self.balld  = 1
             self.ballup = self.R.Next(-4, 5)
-        
-        if ball.Top <= 0:
-            self.balld = -1
-            self.Top += 5 * self.balld
-        elif ball.Bottom >= self.Height:
-            self.balld = 1
-            self.Top += 5 * self.balld
-        
+            
         if ball.Top <= self.Top + 10:
             self.ballup = 1
         elif ball.Top >= self.Height - 50:
             self.ballup = -1
-        if e.KeyCode == Keys.C and e.KeyCode == Keys.H and e.KeyCode == Keys.S:
-        	rscore2 = rscore * 2
-        	lscore2 = lscore * 2
-        
-        if ball.Location.X <= 0 or \
-           (ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
-               rscore2 += 1
-               self._rightscore.Text = str(rscore2)
-               ball.Left = self.Width // 2
-               ball.Top  = self.Height // 2
-        
-        if ball.Location.X >= self.Width or \
-           (ball.Location.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
-               lscore2 += 1
-               self._leftscore.Text = str(lscore2)
+            
+        if ball.Location.X <= 0 or ball.Location.X < lpdl.Left - 20:
+               if ball.Location.X >= self.Width or ball.Location.X >lpdl.Left + 20:
+               	rscore += 1
+               	self._rightscore.Text = str(rscore)
+               	ball.Left = self.Width // 2
+               	ball.Top  = self.Height // 2
+           
+        if ball.Location.X >= self.Width or ball.Location.X > rpdl.Right + 20:
+               lscore += 1
+               self._leftscore.Text = str(lscore)
                ball.Left = self.Width // 2
                ball.Top  = self.Height // 2
                
+        """ TODO: FINISH RIGHT SCORE WIN CONDITION """
         
-        if rscore2 == 10:  
+        if lscore == 10:  # Left win condition
             self._timerball.Enabled = False
-            ball.Reft   = self.Width // 2
-            ball.Top    = self.Height // 2
+            ball.Left = self.Width // 2
+            ball.Top  = self.Height // 2
             self.ballup = 0
-            self._lbltitle.Text    = "Right Player Wins! Press R to restart"
+            self._lbltitle.Text = "Left Player Wins! Press R to restart"
             self._lbltitle.Visible = True
         
-        
-        if lscore2 == 10:  # Left win condition
+        if rscore == 10:  
             self._timerball.Enabled = False
-            ball.Left   = self.Width // 2
-            ball.Top    = self.Height // 2
+            ball.Left = self.Width // 2
+            ball.Top  = self.Height // 2
             self.ballup = 0
-            self._lbltitle.Text    = "Left Player Wins! Press R to restart"
+            self._lbltitle.Text = "Right Player Wins! Press R to restart"
             self._lbltitle.Visible = True
-        
+            
         """ TODO: ? """
         if self._timerboolean.Enabled:
             lpdl.Top = ball.Top - 20
@@ -223,28 +212,23 @@ class MainForm(Form):
             lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """ TODO: RESET SECRETS """
-            BackColor 		   = Color.White
-            lpdl.BackColor  = Color.White
-            rpdl.BackColor = Color.White
-            leftscore.ForeColor   = Color.White
-            rightscore.ForeColor   = Color.White
-            lbltitle.ForeColor = Color.White
+            bl.BackColor = Color.White
             
         if e.KeyCode == Keys.R:
             reset()
-        
+            
         """ TODO: SECRET CONTROL """
         
         if e.KeyCode == Keys.Enter:
             tball.Enabled = True
-            tdum.Enabled = True
+            tdum.Enabled  = True
             tbool.Enabled = not tmult.Enabled
             title.Visible = False
-        
+            
         if e.KeyCode == Keys.M:
             reset()
             title.Visible = True
-            title.Text    = "Use W and S to move the left paddle; hit Enter to start"
+            title.Text = "Use W and S to move the left paddle; hit Enter to start"
             tmult.Enabled = True
             
         if tdum.Enabled:
@@ -259,18 +243,18 @@ class MainForm(Form):
         if tmult.Enabled and tball.Enabled:
             if e.KeyCode == Keys.W:
                 self.flagleft = False
-                left.Enabled = True
+                tright.Enabled = True
             elif e.KeyCode == Keys.S:
                 self.flagleft = True
-                tleft.Enabled = True
-        pass
+                tright.Enabled = True
+        
 
     def MainFormLoad(self, sender, e):
         """ TODO: ADD 3 UNIQUE SECRETS/CHEATS/EASTER EGGS
         IN TOTAL & FINISH MULTIPLAYER & SCOREBOARD & DUMMY AI """
-        self.balld = 1
+        self.balld  = 1
         self.ballup = self.R.Next(-4, 5)
-    
+        
     def pdlTick(self, pdl, flagd, tmr):
         if flagd == True:
             pdl.Top += 5
@@ -279,11 +263,11 @@ class MainForm(Form):
         if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
             tmr.Enabled = False
 
-    def TimerleftTick(self, sender, e):
-        self.pdlTick(self._lblleft, self.flagleft, self._timerleft)
-
     def TimerrightTick(self, sender, e):
         self.pdlTick(self._lblright, self.flagright, self._timerright)
+
+    def TimerleftTick(self, sender, e):
+        self.pdlTick(self._lblleft, self.flagleft, self._timerleft)
 
     def LblballClick(self, sender, e):
         self._lblball.BackColor    = Color.Red
@@ -295,7 +279,6 @@ class MainForm(Form):
         self._lbltitle.ForeColor   = Color.Navy
         
         """ TODO: PUT MORE EASTER EGGS LATER """
-
     def MainFormSizeChanged(self, sender, e):
         self._lblright.Left   = self.Width - 25 - self._lblright.Width
         self._rightscore.Left = self.Width - 75 - self._rightscore.Width
