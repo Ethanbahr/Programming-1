@@ -165,18 +165,18 @@ class MainForm(Form):
         
         if lscore == 10:  # Left win condition
             self._timerball.Enabled = False
-            ball.Left = self.Width // 2
-            ball.Top  = self.Height // 2
+            ball.Left   = self.Width // 2
+            ball.Top    = self.Height // 2
             self.ballup = 0
-            self._lbltitle.Text = "Left Player Wins! Press R to restart"
+            self._lbltitle.Text    = "Left Player Wins! Press R to restart"
             self._lbltitle.Visible = True
         
         if rscore == 10:  
             self._timerball.Enabled = False
-            ball.Left = self.Width // 2
-            ball.Top  = self.Height // 2
+            ball.Left   = self.Width // 2
+            ball.Top    = self.Height // 2
             self.ballup = 0
-            self._lbltitle.Text = "Right Player Wins! Press R to restart"
+            self._lbltitle.Text    = "Right Player Wins! Press R to restart"
             self._lbltitle.Visible = True
             
         """ TODO: ? """
@@ -207,12 +207,18 @@ class MainForm(Form):
             tmult.Enabled  = False
             tleft.Enabled  = False
             tright.Enabled = False
-            bl.Left = self.Width // 2
-            bl.Top = self.Height // 2
+            bl.Left  = self.Width // 2
+            bl.Top   = self.Height // 2
             lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """ TODO: RESET SECRETS """
-            bl.BackColor = Color.White
+            #self._lblball.BackColor    = Color.White
+            #bl.BackColor 			   = Color.White
+            #self._lblright.BackColor   = Color.White
+            #self._lblleft.BackColor    = Color.White
+        	#self._rightscore.ForeColor = Color.White
+        	#self._leftscore.ForeColor  = Color.White
+        	#self._lbltitle.ForeColor   = Color.White
             
         if e.KeyCode == Keys.R:
             reset()
@@ -220,16 +226,17 @@ class MainForm(Form):
         """ TODO: SECRET CONTROL """
         
         if e.KeyCode == Keys.Enter:
-            tball.Enabled = True
-            tdum.Enabled  = True
-            tbool.Enabled = not tmult.Enabled
-            title.Visible = False
+            tball.Enabled  = True
+            tdum.Enabled   = True
+            tbool.Enabled  = not tmult.Enabled
+            title.Visible  = False
             
         if e.KeyCode == Keys.M:
             reset()
-            title.Visible = True
-            title.Text = "Use W and S to move the left paddle; hit Enter to start"
-            tmult.Enabled = True
+            title.Visible  = True
+            title.Text     = "Use W and S to move the left paddle; hit Enter to start"
+            tmult.Enabled  = True
+            
             
         if tdum.Enabled:
             if e.KeyCode == Keys.Up:
@@ -243,10 +250,10 @@ class MainForm(Form):
         if tmult.Enabled and tball.Enabled:
             if e.KeyCode == Keys.W:
                 self.flagleft = False
-                tright.Enabled = True
+                tleft.Enabled = True
             elif e.KeyCode == Keys.S:
                 self.flagleft = True
-                tright.Enabled = True
+                tleft.Enabled = True
         
 
     def MainFormLoad(self, sender, e):
