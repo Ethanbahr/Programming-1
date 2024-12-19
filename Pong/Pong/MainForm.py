@@ -14,117 +14,117 @@ class MainForm(Form):
         self.flagright = False
     
     def InitializeComponent(self):
-        self._components = System.ComponentModel.Container()
-        self._lbltitle = System.Windows.Forms.Label()
-        self._leftscore = System.Windows.Forms.Label()
-        self._rightscore = System.Windows.Forms.Label()
-        self._lblball = System.Windows.Forms.Label()
-        self._lblleft = System.Windows.Forms.Label()
-        self._lblright = System.Windows.Forms.Label()
-        self._timerdummy = System.Windows.Forms.Timer(self._components)
-        self._timerboolean = System.Windows.Forms.Timer(self._components)
-        self._timerright = System.Windows.Forms.Timer(self._components)
-        self._timerleft = System.Windows.Forms.Timer(self._components)
-        self._timerball = System.Windows.Forms.Timer(self._components)
-        self._timermulti = System.Windows.Forms.Timer(self._components)
-        self.SuspendLayout()
-        # 
-        # lbltitle
-        # 
-        self._lbltitle.BackColor = System.Drawing.Color.Transparent
-        self._lbltitle.Font = System.Drawing.Font("Microsoft Sans Serif", 20, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._lbltitle.ForeColor = System.Drawing.Color.White
-        self._lbltitle.Location = System.Drawing.Point(12, 25)
-        self._lbltitle.Name = "lbltitle"
-        self._lbltitle.Size = System.Drawing.Size(958, 52)
-        self._lbltitle.TabIndex = 0
-        self._lbltitle.Text = "Press Enter to Start or M to start Multiplayer"
-        self._lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        # 
-        # leftscore
-        # 
-        self._leftscore.BackColor = System.Drawing.Color.Transparent
-        self._leftscore.Font = System.Drawing.Font("Microsoft Sans Serif", 48, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._leftscore.ForeColor = System.Drawing.Color.White
-        self._leftscore.Location = System.Drawing.Point(78, 96)
-        self._leftscore.Name = "leftscore"
-        self._leftscore.Size = System.Drawing.Size(166, 109)
-        self._leftscore.TabIndex = 1
-        self._leftscore.Text = "0"
-        self._leftscore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        # 
-        # rightscore
-        # 
-        self._rightscore.BackColor = System.Drawing.Color.Transparent
-        self._rightscore.Font = System.Drawing.Font("Microsoft Sans Serif", 48, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._rightscore.ForeColor = System.Drawing.Color.White
-        self._rightscore.Location = System.Drawing.Point(734, 96)
-        self._rightscore.Name = "rightscore"
-        self._rightscore.Size = System.Drawing.Size(166, 109)
-        self._rightscore.TabIndex = 2
-        self._rightscore.Text = "0"
-        self._rightscore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        # 
-        # lblball
-        # 
-        self._lblball.BackColor = System.Drawing.Color.White
-        self._lblball.Location = System.Drawing.Point(479, 304)
-        self._lblball.Name = "lblball"
-        self._lblball.Size = System.Drawing.Size(20, 20)
-        self._lblball.TabIndex = 3
-        self._lblball.Click += self.LblballClick
-        # 
-        # lblleft
-        # 
-        self._lblleft.BackColor = System.Drawing.Color.White
-        self._lblleft.Location = System.Drawing.Point(12, 246)
-        self._lblleft.Name = "lblleft"
-        self._lblleft.Size = System.Drawing.Size(20, 100)
-        self._lblleft.TabIndex = 4
-        # 
-        # lblright
-        # 
-        self._lblright.BackColor = System.Drawing.Color.White
-        self._lblright.Location = System.Drawing.Point(950, 246)
-        self._lblright.Name = "lblright"
-        self._lblright.Size = System.Drawing.Size(20, 100)
-        self._lblright.TabIndex = 5
-        # 
-        # timerright
-        # 
-        self._timerright.Interval = 20
-        self._timerright.Tick += self.TimerrightTick
-        # 
-        # timerleft
-        # 
-        self._timerleft.Interval = 20
-        self._timerleft.Tick += self.TimerleftTick
-        # 
-        # timerball
-        # 
-        self._timerball.Interval = 20
-        self._timerball.Tick += self.TimerballTick
-        # 
-        # timermulti
-        # 
-        self._timermulti.Interval = 20
-        # 
-        # MainForm
-        # 
-        self.BackColor = System.Drawing.Color.Black
-        self.ClientSize = System.Drawing.Size(982, 590)
-        self.Controls.Add(self._lblright)
-        self.Controls.Add(self._lblleft)
-        self.Controls.Add(self._lblball)
-        self.Controls.Add(self._rightscore)
-        self.Controls.Add(self._leftscore)
-        self.Controls.Add(self._lbltitle)
-        self.Name = "MainForm"
-        self.Text = "Pong"
-        self.Load += self.MainFormLoad
-        self.SizeChanged += self.MainFormSizeChanged
-        self.KeyDown += self.MainFormKeyDown
-        self.ResumeLayout(False)
+					self._components = System.ComponentModel.Container()
+					self._lbltitle = System.Windows.Forms.Label()
+					self._leftscore = System.Windows.Forms.Label()
+					self._rightscore = System.Windows.Forms.Label()
+					self._lblball = System.Windows.Forms.Label()
+					self._lblleft = System.Windows.Forms.Label()
+					self._lblright = System.Windows.Forms.Label()
+					self._timerdummy = System.Windows.Forms.Timer(self._components)
+					self._timerboolean = System.Windows.Forms.Timer(self._components)
+					self._timerright = System.Windows.Forms.Timer(self._components)
+					self._timerleft = System.Windows.Forms.Timer(self._components)
+					self._timerball = System.Windows.Forms.Timer(self._components)
+					self._timermulti = System.Windows.Forms.Timer(self._components)
+					self.SuspendLayout()
+					# 
+					# lbltitle
+					# 
+					self._lbltitle.BackColor = System.Drawing.Color.Transparent
+					self._lbltitle.Font = System.Drawing.Font("Microsoft Sans Serif", 20, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+					self._lbltitle.ForeColor = System.Drawing.Color.White
+					self._lbltitle.Location = System.Drawing.Point(12, 25)
+					self._lbltitle.Name = "lbltitle"
+					self._lbltitle.Size = System.Drawing.Size(958, 52)
+					self._lbltitle.TabIndex = 0
+					self._lbltitle.Text = "Press Enter to Start or M to start Multiplayer"
+					self._lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+					# 
+					# leftscore
+					# 
+					self._leftscore.BackColor = System.Drawing.Color.Transparent
+					self._leftscore.Font = System.Drawing.Font("Microsoft Sans Serif", 48, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+					self._leftscore.ForeColor = System.Drawing.Color.White
+					self._leftscore.Location = System.Drawing.Point(78, 96)
+					self._leftscore.Name = "leftscore"
+					self._leftscore.Size = System.Drawing.Size(166, 109)
+					self._leftscore.TabIndex = 1
+					self._leftscore.Text = "0"
+					self._leftscore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+					# 
+					# rightscore
+					# 
+					self._rightscore.BackColor = System.Drawing.Color.Transparent
+					self._rightscore.Font = System.Drawing.Font("Microsoft Sans Serif", 48, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+					self._rightscore.ForeColor = System.Drawing.Color.White
+					self._rightscore.Location = System.Drawing.Point(734, 96)
+					self._rightscore.Name = "rightscore"
+					self._rightscore.Size = System.Drawing.Size(166, 109)
+					self._rightscore.TabIndex = 2
+					self._rightscore.Text = "0"
+					self._rightscore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+					# 
+					# lblball
+					# 
+					self._lblball.BackColor = System.Drawing.Color.White
+					self._lblball.Location = System.Drawing.Point(479, 304)
+					self._lblball.Name = "lblball"
+					self._lblball.Size = System.Drawing.Size(20, 20)
+					self._lblball.TabIndex = 3
+					self._lblball.Click += self.LblballClick
+					# 
+					# lblleft
+					# 
+					self._lblleft.BackColor = System.Drawing.Color.White
+					self._lblleft.Location = System.Drawing.Point(12, 246)
+					self._lblleft.Name = "lblleft"
+					self._lblleft.Size = System.Drawing.Size(20, 100)
+					self._lblleft.TabIndex = 4
+					# 
+					# lblright
+					# 
+					self._lblright.BackColor = System.Drawing.Color.White
+					self._lblright.Location = System.Drawing.Point(950, 246)
+					self._lblright.Name = "lblright"
+					self._lblright.Size = System.Drawing.Size(20, 100)
+					self._lblright.TabIndex = 5
+					# 
+					# timerright
+					# 
+					self._timerright.Interval = 20
+					self._timerright.Tick += self.TimerrightTick
+					# 
+					# timerleft
+					# 
+					self._timerleft.Interval = 20
+					self._timerleft.Tick += self.TimerleftTick
+					# 
+					# timerball
+					# 
+					self._timerball.Interval = 20
+					self._timerball.Tick += self.TimerballTick
+					# 
+					# timermulti
+					# 
+					self._timermulti.Interval = 20
+					# 
+					# MainForm
+					# 
+					self.BackColor = System.Drawing.Color.Black
+					self.ClientSize = System.Drawing.Size(982, 590)
+					self.Controls.Add(self._lblright)
+					self.Controls.Add(self._lblleft)
+					self.Controls.Add(self._lblball)
+					self.Controls.Add(self._rightscore)
+					self.Controls.Add(self._leftscore)
+					self.Controls.Add(self._lbltitle)
+					self.Name = "MainForm"
+					self.Text = "Pong"
+					self.Load += self.MainFormLoad
+					self.SizeChanged += self.MainFormSizeChanged
+					self.KeyDown += self.MainFormKeyDown
+					self.ResumeLayout(False)
 
 
     def TimerballTick(self, sender, e):
@@ -149,7 +149,7 @@ class MainForm(Form):
             self.ballup = -1
             
         if ball.Location.X <= 0 or ball.Location.X < lpdl.Left - 20:
-               if ball.Location.X >= self.Width or ball.Location.X >lpdl.Left + 20:
+               if ball.Location.X >= self.Width or ball.Location.X >lpdl.Left - 20:
                	rscore += 1
                	self._rightscore.Text = str(rscore)
                	ball.Left = self.Width // 2
@@ -197,9 +197,9 @@ class MainForm(Form):
         title  = self._lbltitle
         
         def reset():
-            title.Visible = True
-            title.Text    = "Press Enter to Start or M to start Multiplayer"
-            self._leftscore.Text  = "0"
+        	title.Visible = True
+        	title.Text    = "Press Enter to Start or M to start Multiplayer"
+        	self._leftscore.Text  = "0"
             self._rightscore.Text = "0"
             tball.Enabled  = False
             tdum.Enabled   = False
@@ -212,13 +212,13 @@ class MainForm(Form):
             lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """ TODO: RESET SECRETS """
-            #self._lblball.BackColor    = Color.White
-            #bl.BackColor 			   = Color.White
-            #self._lblright.BackColor   = Color.White
-            #self._lblleft.BackColor    = Color.White
-        	#self._rightscore.ForeColor = Color.White
-        	#self._leftscore.ForeColor  = Color.White
-        	#self._lbltitle.ForeColor   = Color.White
+            self._lblball.BackColor    = Color.White
+            bl.BackColor 			   = Color.Black
+            self._lblright.BackColor   = Color.White
+            self._lblleft.BackColor	   = Color.White
+            self._rightscore.ForeColor = Color.White
+            self._leftscore.ForeColor  = Color.White
+            self._lbltitle.ForeColor   = Color.White
             
         if e.KeyCode == Keys.R:
             reset()
@@ -230,6 +230,7 @@ class MainForm(Form):
             tdum.Enabled   = True
             tbool.Enabled  = not tmult.Enabled
             title.Visible  = False
+            
             
         if e.KeyCode == Keys.M:
             reset()
@@ -279,11 +280,11 @@ class MainForm(Form):
     def LblballClick(self, sender, e):
         self._lblball.BackColor    = Color.Red
         self.BackColor			   = Color.Green  # Form BG Color
-        self._lblright.BackColor   = Color.SaddleBrown
-        self._lblleft.BackColor    = Color.SaddleBrown
+        self._lblright.BackColor   = Color.Navy
+        self._lblleft.BackColor    = Color.Navy
         self._rightscore.ForeColor = Color.Yellow
         self._leftscore.ForeColor  = Color.Yellow
-        self._lbltitle.ForeColor   = Color.Navy
+        self._lbltitle.ForeColor   = Color.SaddleBrown
         
         """ TODO: PUT MORE EASTER EGGS LATER """
     def MainFormSizeChanged(self, sender, e):
