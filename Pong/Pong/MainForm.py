@@ -200,36 +200,50 @@ class MainForm(Form):
         	title.Visible = True
         	title.Text    = "Press Enter to Start or M to start Multiplayer"
         	self._leftscore.Text  = "0"
-            self._rightscore.Text = "0"
-            tball.Enabled  = False
-            tdum.Enabled   = False
-            tbool.Enabled  = False
-            tmult.Enabled  = False
-            tleft.Enabled  = False
-            tright.Enabled = False
-            bl.Left  = self.Width // 2
-            bl.Top   = self.Height // 2
-            lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
-            rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
-            """ TODO: RESET SECRETS """
-            self._lblball.BackColor    = Color.White
-            bl.BackColor 			   = Color.Black
-            self._lblright.BackColor   = Color.White
-            self._lblleft.BackColor	   = Color.White
-            self._rightscore.ForeColor = Color.White
-            self._leftscore.ForeColor  = Color.White
-            self._lbltitle.ForeColor   = Color.White
+        	self._rightscore.Text = "0"
+        	tball.Enabled  = False
+        	tdum.Enabled   = False
+        	tbool.Enabled  = False
+        	tmult.Enabled  = False
+        	tleft.Enabled  = False
+        	tright.Enabled = False
+        	bl.Left  = self.Width // 2
+        	bl.Top   = self.Height // 2
+        	lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
+        	rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
+        	""" TODO: RESET SECRETS """
+        	self.BackColor			   = Color.Black
+        	self._lblball.BackColor    = Color.White
+        	bl.BackColor 			   = Color.White
+        	self._lblright.BackColor   = Color.White
+        	self._lblleft.BackColor	   = Color.White
+        	self._rightscore.ForeColor = Color.White
+        	self._leftscore.ForeColor  = Color.White
+        	self._lbltitle.ForeColor   = Color.White
+        	self._lblball.Width 	   = 10
+        	self._lblball.Height 	   = 10
             
         if e.KeyCode == Keys.R:
             reset()
-            
-        """ TODO: SECRET CONTROL """
         
         if e.KeyCode == Keys.Enter:
             tball.Enabled  = True
             tdum.Enabled   = True
             tbool.Enabled  = not tmult.Enabled
             title.Visible  = False
+            
+        if e.KeyCode == Keys.P:
+			tball.Enabled  = True
+			tdum.Enabled   = True
+			tbool.Enabled  = not tmult.Enabled
+			title.Visible  = False            	    
+			tball.Interval = 1
+			self._lblball.BackColor    = Color.Orange
+			self._lblright.BackColor   = Color.Red
+			self._lblleft.BackColor    = Color.Red
+			self._rightscore.ForeColor = Color.Yellow
+			self._leftscore.ForeColor  = Color.Yellow
+			self._lbltitle.ForeColor   = Color.LightYellow
             
             
         if e.KeyCode == Keys.M:
@@ -284,7 +298,7 @@ class MainForm(Form):
         self._lblleft.BackColor    = Color.Navy
         self._rightscore.ForeColor = Color.Yellow
         self._leftscore.ForeColor  = Color.Yellow
-        self._lbltitle.ForeColor   = Color.SaddleBrown
+        self._lbltitle.ForeColor   = Color.SaddleBrown			
         
         """ TODO: PUT MORE EASTER EGGS LATER """
     def MainFormSizeChanged(self, sender, e):
